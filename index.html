@@ -46,7 +46,7 @@
         function fetchSimpsonJSON() {
         // Feel free to download this HTML and edit it, to use another Pokemon ID
         const simpsonId = 1;
-        const url = `https://simpsons-quotes-api.herokuapp.com/quotes/${simpsonId}`;
+        const url = `https://simpsons-quotes-api.herokuapp.com/quotes/`;
         axios.get(url)
             .then(function(response) {
             return response.data[0]; // response.data instead of response.json() with fetch
@@ -64,7 +64,7 @@
             });
         }
 
-        fetchPokemonJSON();
+        fetchSimpsonJSON();
         </script>
 	</body>
 </html>
